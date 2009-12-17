@@ -1,0 +1,41 @@
+Encoding.com XML API Wrappers
+==============
+ 
+This plugin connects to the Encoding.com API for pay as you go cloud based video transcoding services.
+ 
+Requires a API Key and User ID from Encoding.com.  30day adn 1GB free trial available at www.encoding.com/signup
+ 
+Examples:
+
+  <!-- Building our query -->
+    <cfsavecontent variable="xml">
+        <?xml version="1.0" ?>
+        <query>
+            <action>AddMedia</action>
+            <userid>777</userid>
+            <userkey>277e0d0sdfaaa9140a27c03419f5era</userkey>
+            <source>http://your.server.tld/some/path/file</source>
+            <format>
+                <output>3gp</output>
+            </format>
+            <format>
+                <output>wmv</output>
+            </format>
+            <format>
+                <output>flv</output>
+            </format>
+        </query>
+    </cfsavecontent>
+   
+    <!-- Setting up the URL to send the request -->
+    <cfset theURL = "http://manage.encoding.com">
+   
+    <!-- Sending the request -->
+    <cfhttp url="#theURL#" charset="utf-8" method="post">
+        <cfhttpparam type="formfield" name="xml" value="#xml#">
+    </cfhttp>
+   
+    <!-- Getting the result -->
+    <cfdump var="#cfhttp.fileContent#">
+    
+Copyright (c) 2009 Encoding.com Inc.  
