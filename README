@@ -1,9 +1,9 @@
-Encoding.com XML API Wrappers
+<a href='http://www.encoding.com'>Encoding.com</a> XML API Wrappers
 ==============
  
-This plugin connects to the Encoding.com API for pay as you go cloud based video transcoding services.
+This plugin connects to the <a href='http://www.encoding.com'>Encoding.com</a> API for pay as you go cloud based video transcoding services.
  
-Requires a API Key and User ID from Encoding.com.  30day adn 1GB free trial available at www.encoding.com/signup
+Requires a API Key and User ID from <a href='http://www.encoding.com'>Encoding.com</a>.  30day adn 1GB free trial available at <a href='http://www.encoding.com/signup'>www.encoding.com/signup</a>
  
 Examples:
 
@@ -38,4 +38,4 @@ Examples:
     <!-- Getting the result -->
     <cfdump var="#cfhttp.fileContent#">
     
-Copyright (c) 2009 Encoding.com Inc.  
+Copyright (c) 2009 <a href='http://www.encoding.com'>Encoding.com</a> Inc.  
